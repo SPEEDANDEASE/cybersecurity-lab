@@ -9,10 +9,10 @@ Practice using Nmap to discover live hosts, detect open ports, and get comfortab
 # Scans Practiced
 ### 1. SYN Scan (-sS)
 A half-open scan to find open TCP ports quickly.
-```bash
+bash
 nmap -sS <target IP>
 
-### 2.  Ping Scan (-sn)
+### 2.Ping Scan (-sn)
 Find live hosts without scanning for open ports.
-```bash
+bash
 nmap -sn <target IP>
