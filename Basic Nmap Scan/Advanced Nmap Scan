@@ -1,0 +1,26 @@
+# Advanced Network Scanning with Nmap
+
+## Goals
+Practicing deeper enumeration techniques with `nmap` to map networks and identify systems accurately.
+
+## Commands Practiced
+
+1. **Scan an Entire Subnet**
+   `bash
+   sudo nmap -sT <target>/subnet`
+Detects all active hosts on the network.
+
+2. **Detect Operating System**
+`bash
+nmap -O <target>`
+Attempts to identify the OS of the target machine.
+
+3. **Scan Specific Ports**
+`bash
+nmap -p <port> <target>`
+Useful for checking whether a particular service is open.
+
+4. **Output to a Readable File**
+`bash
+nmap -sn -O -oN filename.txt`
+Saves the scan result in a human-readable .txt format.
