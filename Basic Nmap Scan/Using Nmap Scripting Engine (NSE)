@@ -1,0 +1,23 @@
+# Using Nmap Scripting Engine (NSE)
+
+## What Is NSE?
+The Nmap Scripting Engine is a powerful feature of `nmap` that uses prewritten **scripts** to automate scanning, vulnerability detection, and much more.
+
+## Why NSE?
+Instead of memorizing complex commands, NSE scripts allow you to:
+- Identify services and vulnerabilities
+- Perform brute force or version scans
+- Save time and get deeper results
+
+## How to Find Scripts
+```bash
+cd /usr/share/nmap/scripts
+
+How to Use NSE Scripts
+nmap --script=<script-name> <target>
+
+example:
+This script probes HTTP services for directories, logins, and more.
+nmap --script=http-enum 192.168.54.101
+
+
